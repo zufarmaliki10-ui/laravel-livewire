@@ -2,6 +2,5 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// posts index
+Route::livewire('/', 'pages::posts.index')->name('posts.index');
